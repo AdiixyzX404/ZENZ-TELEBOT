@@ -3,8 +3,9 @@ const { prefix } = JSON.parse(fs.readFileSync('./config.json'))
 
 // MAIN MENU
 exports.menu = (jumlahUser, role, namaUserr, tgl, uptem, result) => {
-    return `Hi ${namaUserr}
-Role : ${role}
+    return `Hello ${namaUserr} 👋
+
+Your role : ${role}
 
 Ramadhan is coming in ${result} day
 
@@ -166,7 +167,9 @@ active : ${uptem}`
 }
 
 exports.menun = (jumlahUser, role, namaUserr, tgl, uptem, tot, result) => {
-    return `Hi ${namaUserr}
+    return `Hello ${namaUserr} 👋
+
+Bot name : IAmAdyyyz Botz
 Role : ${role}
 Total Hit : ${tot}
 
@@ -357,8 +360,8 @@ Ramadhan is coming in ${result} day
 ⤷ ${prefix}antilink ? antilink enable / disable
 ⤷ ${prefix}nsfw ? nsfw enable / disable
 
-verified User : ${jumlahUser}
-active : ${uptem}`
+Verified User : ${jumlahUser}
+Active : ${uptem}`
 }
 
 exports.menuOwner = () => {
@@ -375,8 +378,7 @@ exports.menuKerang = () => {
 # MENU KERANG AJAIB
 ╭───────────────
 │ *${prefix}gantengcek*
-│ ⤷ _rate ganteng_
-├───────────────
+├───
 │ *${prefix}cantikcek*
 │ ⤷ _rate cantik_
 ├───────────────
@@ -412,7 +414,7 @@ exports.menuKerang = () => {
 
 // USER
 exports.wait = () => {
-    return 'Mohon tunggu sebentar..'
+    return 'Give me process this shit!.'
 }
 
 exports.minimalDb = () => {
@@ -435,11 +437,11 @@ exports.notPremium = () => {
 }
 
 exports.doneOwner = () => {
-    return `Sudah selesai, Owner-sama~`
+    return `Sudah selesai, Owner-Adyy~`
 }
 
 exports.listBlock = (blockNumber) => {
-    return `TOTAL USER YANG SHIRO BLOKIR
+    return `TOTAL USER YANG ADII BLOKIR
     
 *${blockNumber.length} Pengguna :*\n\n`
 }
@@ -491,7 +493,7 @@ exports.registered = (namaUser, sender) => {
 ╰────────────────────
 
 Verifikasi selesai silahkan ketik
-${prefix}lanjut
+${prefix}help
 
 Bila belum paham ketik 
 ${prefix}rules
@@ -504,10 +506,7 @@ exports.addedGroup = () => {
 }
 
 exports.groupOnly = () => {
-    return `Perintah ini khusus didalam group.
-
-Join BOT Group?
-https://t.me/joinchat/vF8FW3iwB1VmMGE1`
+    return `Perintah ini khusus didalam group.`
 }
 
 exports.adminOnly = () => {
@@ -533,7 +532,7 @@ exports.linkDetected = () => {
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan shiro admin group.`
+    return `Jadikan adyy admin group.`
 }
 
 exports.detectorOnAlready = () => {
@@ -573,8 +572,7 @@ exports.rules = () => {
 ❏ *R U L E S*
 ══════════════════
 1. Dilarang spam bot. 
-2. Dilarang telepon bot.
-3. Dilarang mengeksploitasi bot.
+2. Dilarang mengeksploitasi bot.
 
 Sanksi: *BLOCKED*
 
@@ -584,25 +582,19 @@ silakan lanjut baca biar paham !
 
 sisa limit yg kamu punya hanya 20 perhari dan otomatis reset pada jam 04:00 WIB
 
-*UPDATE* : Di bulan ramadhan/puasa limit di reset 2x tiap jam 04:00 & 15:00 WIB
+*UPDATE* : limit di reset 2x tiap jam 04:00 & 15:00 WIB
 Jadi Kalian Punya 50 Limit dalam sehari, harap gunakan dengan bijak
-( hanya valid jika sudah bulan ramadhan )
-
-untuk membeli premium ketik ${prefix}belipremium
-tidak ada limit untuk user premium.
 
 *Cara menggunakan Bot*
 
-Perintah BOT adalah : [ *${prefix}* ] Untuk membuka menu ketik ${prefix}menu
+Prefux BOT adalah : [ *${prefix}* ] Untuk membuka menu ketik ${prefix}help
 
 jika ada error harap hubungi owner bot
 dengan ketik ${prefix}owner.
 
 dan jika masih bingung cara menggunakan bot silakan join group bot di bawah ini.
 
-*Bot Support* : https://t.me/joinchat/vF8FW3iwB1VmMGE1
-
--zen's`
+-Adyy's`
 }
 
 exports.beliPrem = () => {
